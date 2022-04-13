@@ -23,7 +23,8 @@ def show_predict_page():
 
     Sex = st.slider("Sex (1 = Male, 2 = Female)", 1, 2, 1)
 
-    Age = st.slider("Age", 0, 100, 18)
+    Age_Group = st.slider(
+        "Age Group (Pick '4' for 18-19 years, '3' for 20-39 years, '2' for 40-64 years, '1' for greater than 65 years)", 1, 4, 1)
 
     Health_Worker_Family = st.slider(
         "Is your family member a healthcare worker? (1 = Yes, 2 = No)", 1, 2, 1)
@@ -169,7 +170,7 @@ def show_predict_page():
     if ok:
         X = np.array([[
             Sex,
-            Age,
+            Age_Group,
             Health_Worker_Family,
             Married,
             Income,
