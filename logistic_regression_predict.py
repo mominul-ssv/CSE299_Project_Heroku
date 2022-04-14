@@ -17,6 +17,8 @@ regressor_loaded = data["model"]
 def show_logistic_regression_predict():
     st.title("Lonliness Prediction")
 
+    st.write("""### (Logistic Regression)""")
+
     st.write("""### Please answer the general questions below:""")
 
     st.markdown("""---""")

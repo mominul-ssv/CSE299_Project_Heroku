@@ -17,6 +17,8 @@ naive_bayes_loaded = data["model"]
 def show_naive_bayes_predict():
     st.title("Lonliness Prediction")
 
+    st.write("""### (Naive Bayes)""")
+
     st.write("""### Please answer the general questions below:""")
 
     st.markdown("""---""")

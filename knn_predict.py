@@ -17,6 +17,8 @@ knn_loaded = data["model"]
 def show_knn_predict():
     st.title("Lonliness Prediction")
 
+    st.write("""### (KNN)""")
+
     st.write("""### Please answer the general questions below:""")
 
     st.markdown("""---""")
