@@ -74,6 +74,6 @@ def show_logistic_regression_predict():
 
         state = regressor_loaded.predict(X)
         if state[0] == 0:
-            st.subheader("Lonely.")
+            st.subheader("Socially isolated.")
         elif state[0] == 1:
-            st.subheader("Not Lonely!")
+            st.subheader("Normal.")

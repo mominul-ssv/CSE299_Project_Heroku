@@ -74,6 +74,6 @@ def show_naive_bayes_predict():
 
         state = naive_bayes_loaded.predict(X)
         if state[0] == 0:
-            st.subheader("Lonely.")
+            st.subheader("Socially isolated.")
         elif state[0] == 1:
-            st.subheader("Not Lonely!")
+            st.subheader("Normal.")
